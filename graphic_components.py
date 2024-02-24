@@ -53,7 +53,7 @@ class button:
             pygame.draw.rect(screen, self.button_dark, [self.position[0], self.position[1], self.size[0], self.size[1]])
         # has to be after button draw so text can appear infront
         if self.text_active:
-            screen.blit(self.text, (self.position[0] + self.text_offset[0], self.position[1] + + self.text_offset[1]))
+            screen.blit(self.text, (self.position[0] + self.text_offset[0], self.position[1] + self.text_offset[1]))
 
     # checks to see if the button is colliding
     def colliding(self, mouse_pos:tuple) -> bool:

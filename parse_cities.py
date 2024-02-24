@@ -1,7 +1,7 @@
 import json
 
 # specify the file path
-file_path = "current.city.list.json"
+file_path = "data/current.city.list.json"
 
 # load data from JSON file
 with open(file_path, 'r', encoding='utf-8', errors='ignore') as json_file:
@@ -12,9 +12,11 @@ parsed_data = []
 
 # goes through json
 for city in data:
+    if city['name'] == '':
+        continue
     # creates new dictionary 
     new_entry = {
-            'name' : city['name'],
+            'name' : city['name'].lower(),
             'id' : city['id']
         }
     # adds to dictionary
@@ -24,7 +26,7 @@ for city in data:
 sorted(parsed_data, key=lambda x: x['id'])
 
 # specify the file path
-file_path = "parsed_cities.json"
+file_path = "data/parsed_cities.json"
 
 # write dictionary to JSON file
 with open(file_path, 'w') as json_file:

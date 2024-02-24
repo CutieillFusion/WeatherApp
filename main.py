@@ -31,3 +31,8 @@ if __name__ == "__main__":
 # - parsed_cities.json is required for this function correctly. if lost download current.city.list.json from OpenWeatherAPI and run parse_cities
 # - changing font ruins everything. fixing this issue seems very impossible
 # - all components are hardcoded in weather_management. Could be stored in a json file but that tends to make modifiying more frustrating from my experience
+    
+# pip install
+# - requests
+# - pygame
+# - pil

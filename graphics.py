@@ -112,7 +112,7 @@ class graphics:
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
                         # send data
-                        self.find_city(self.typing_text)
+                        self.find_city(self.typing_text.lower())
 
                         # resets typing flags
                         self.typing = False
