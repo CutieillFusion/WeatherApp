@@ -1,7 +1,11 @@
 # WeatherApp
  KATA problem for DirectSupply
 
-# Documentation 
+# Documentation
+main.py:
+
+    This code is the main entry point for a weather application. It initializes a graphics object with a specified screen resolution and application name. Then, it enters an infinite loop where it continuously runs the run method of the graphics object, allowing the application to render and respond to events until it is closed by the user.
+
 graphics.py:
 
     This code defines the class graphics responsible for managing the rendering, user input, and graphical components in a Pygame-based application. Here's a breakdown of its functionality:
@@ -105,3 +109,30 @@ util.py:
         Converts a Unix timestamp to local time and returns the hour and minute portion as a string.
     unix_to_day_of_week(unix_timestamp:int, local_time:int=0) -> str:
         Converts a Unix timestamp to local time and returns the day of the week as a string.
+
+settings.py:
+
+    This code defines several constants and paths used in a weather application.
+
+    OPEN_WEATHER_API_KEY: 
+        Private key for accessing the OpenWeather API. It is used to authenticate API requests.
+    DEFAULT_COORDS: 
+        Default coordinates representing a location (Zocca, Italy) used when retrieving weather data if no specific coordinates are provided.
+    DEFAULT_FONT: 
+        Default font used for rendering text in the application.
+    DEFAULT_FONT_COLOR: 
+        Default font color (white) used for rendering text.
+    BACKGROUND_COLORS: 
+        List of background colors used in the application. These colors are used to create a dynamic background that changes over time.
+    Paths to icon images used in the application:
+        SUNRISE_ICON_PATH: Path to the image representing a sunrise icon.
+        SUNSET_ICON_PATH: Path to the image representing a sunset icon.
+        WIND_ICON_PATH: Path to the image representing a wind icon.
+        HUMIDITY_ICON_PATH: Path to the image representing a humidity icon.
+        CLOUDS_ICON_PATH: Path to the image representing a clouds icon.
+        APP_ICON_PATH: Path to the application icon.
+        PARSED_CITIES_PATH: Path to a JSON file containing parsed city data. This file likely includes information such as city names and their corresponding IDs.
+
+parse_cities.py:
+
+    This code reads city data from one JSON file, extracts relevant information (city name converted to lowercase and ID), sorts it based on city IDs, and then writes the processed data to another JSON file.
