@@ -3,6 +3,7 @@
 
 # Documentation 
 graphics.py:
+
     This code defines the class graphics responsible for managing the rendering, user input, and graphical components in a Pygame-based application. Here's a breakdown of its functionality:
 
     Initialization (__init__ method):
@@ -26,6 +27,7 @@ graphics.py:
         Updates the display by flipping the display buffer.
 
 graphic_components.py:
+
     This code defines three classes (Button, Image, and Text) for creating graphical user interface (GUI) components using the Pygame library. Here's a breakdown of each class:
 
     button Class:
@@ -49,6 +51,7 @@ graphic_components.py:
         Note: The code assumes the existence of a settings module with the DEFAULT_FONT and DEFAULT_FONT_COLOR constants, which are used as default values for font-related properties.
 
 weather_management.py:
+
     This defines the weather_management class which manages the interaction between weather data and graphical components, converting data into variables and initializing various text, button, and image components for display.
 
     Initialization:
@@ -62,15 +65,16 @@ weather_management.py:
         It initializes button components, including buttons for toggling between temperature units and speed units.
         It initializes image components, including weather icons and other visual elements.
     Update Methods:
-    update_temperature(): 
-        Toggles between Kelvin, Celsius, and Fahrenheit for temperature units and updates relevant text components accordingly.
-    update_speed(): 
-        Toggles between meters per second and miles per hour for speed units and updates relevant text components accordingly.
+        update_temperature(): 
+            Toggles between Kelvin, Celsius, and Fahrenheit for temperature units and updates relevant text components accordingly.
+        update_speed(): 
+            Toggles between meters per second and miles per hour for speed units and updates relevant text components accordingly.
     Utility Methods:
         get_graphic_components(): 
             Returns the initialized graphical components (buttons, texts, images) as a tuple.
 
-util.py
+util.py:
+
     This code is a collection of functions related to fetching weather data from the OpenWeatherMap API, handling image downloads, and converting timestamps.
 
     request_current_weather_from_name_redundant(city_name:str) -> dict:
