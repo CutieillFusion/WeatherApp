@@ -1,6 +1,13 @@
 # WeatherApp
  KATA problem for DirectSupply
 
+# Required Libraries
+
+    Pygame
+    Requests
+    PIL
+    
+
 # Documentation
 main.py:
 
@@ -41,7 +48,6 @@ graphic_components.py:
         The render method draws the button on a Pygame surface, taking into account the current mouse position to change the button's appearance when hovered.
         The colliding method checks if the mouse cursor is over the button.
         The clicked method executes the associated function if there is one.
-
     image Class:
         Represents an image that can be displayed on the screen.
         The image has properties such as position, size, and the Pygame surface containing the image.

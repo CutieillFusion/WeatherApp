@@ -1,5 +1,5 @@
 import pygame
-from settings import*
+from settings import *
 
 # these are all different classes because the abstraction creates complication
 # its sadly not a zero cost abstraction since each subcomponent can be treated completely differently
